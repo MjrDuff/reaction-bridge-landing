@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const installButton = document.getElementById('install-button');
     const onboardingStatus = document.getElementById('onboarding-status');
 
-    const CHROME_EXTENSION_ID = "YOUR_EXTENSION_ID_HERE";
+    const CHROME_EXTENSION_ID = "aidikmfhfabmbdcailimadpfmchkcake";
     const CHROME_WEB_STORE_URL = `https://chrome.google.com/webstore/detail/reaction-bridge/${CHROME_EXTENSION_ID}`;
 
     const setStatus = (message, isError = false) => {
@@ -11,13 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const checkExtensionAndSetupButton = async () => {
-        if (!CHROME_EXTENSION_ID || CHROME_EXTENSION_ID === "YOUR_EXTENSION_ID_HERE") {
-            setStatus("Extension ID is not configured.", true);
-            installButton.href = "#";
-            installButton.onclick = (e) => e.preventDefault();
-            return;
-        }
-
         try {
             const response = await chrome.runtime.sendMessage(CHROME_EXTENSION_ID, { action: "ping" });
             if (response?.status === 'pong') {
@@ -59,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    if (typeof chrome !== 'undefined' && chrome.runtime) {
+    if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
         checkExtensionAndSetupButton();
     } else {
         installButton.textContent = 'Install for Chrome';
