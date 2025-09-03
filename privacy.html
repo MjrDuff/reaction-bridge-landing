@@ -9,34 +9,44 @@
 <body>
 <div class="container">
     <header class="page-header">
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy for Reaction Bridge</h1>
     </header>
-    <p><strong>Last Updated:</strong> 2025-09-03</p>
+    <p><strong>Last Updated:</strong> 2024-07-20</p>
 
-    <h2>Introduction</h2>
-    <p>This Privacy Policy explains how the "Reaction Bridge" browser extension handles your information. Our core principle is to collect and store the minimum amount of data necessary to provide our service.</p>
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy describes how the "Reaction Bridge" browser extension ("the App") handles your data. Our core principle is to respect your privacy and to collect, use, and store the minimum amount of data necessary to provide our service.</p>
 
-    <h2>Information We Access (via Google/YouTube API)</h2>
-    <p>To function, Reaction Bridge requires your permission to access certain YouTube features on your behalf. When you authenticate with your Google Account, we use the official YouTube Data API to perform actions that you initiate. This includes:</p>
+    <h2>2. What Data We Access and Why</h2>
+    <p>To function, the App uses the official Google YouTube Data API to perform actions on your behalf. We only access data when you explicitly initiate an action within the App's interface. The data we access includes:</p>
     <ul>
-        <li><strong>Viewing your YouTube account:</strong> To identify your active channel.</li>
-        <li><strong>Managing your YouTube account:</strong> To perform actions like liking/disliking a video, subscribing/unsubscribing to a channel, and posting/editing/deleting your comments when you explicitly click the corresponding buttons in the extension.</li>
+        <li><strong>YouTube Channel Information:</strong> We access your public YouTube channel name and thumbnail URL to display which account is currently active in the extension's popup.</li>
+        <li><strong>Video and Channel IDs:</strong> We use the IDs of the original videos and channels to perform actions like liking, commenting, or subscribing.</li>
+        <li><strong>Subscription Status:</strong> We check if you are already subscribed to a channel to display the correct state of the "Subscribe" button.</li>
+        <li><strong>Video Rating Status:</strong> We check your "like" or "dislike" status on a video to display the correct state of the rating buttons.</li>
     </ul>
 
-    <h2>Information We Do Not Collect or Store</h2>
-    <p><strong>We do not store any of your personal data on our own servers.</strong> All interactions with the YouTube API happen directly from your browser to Google's servers. We do not see, log, or store:</p>
+    <h2>3. How We Use Your Data</h2>
+    <p>Your data is used exclusively to perform the core functions of the App, which you control directly:</p>
     <ul>
-        <li>Your Google password.</li>
-        <li>Your personal email address.</li>
-        <li>Your browsing history.</li>
-        <li>Any personal information from your Google or YouTube profile.</li>
+        <li>To display your currently active YouTube channel.</li>
+        <li>To send your "like" or "dislike" action to the original video.</li>
+        <li>To post, edit, or delete your comments on the original video.</li>
+        <li>To subscribe or unsubscribe you from the original creator's channel.</li>
     </ul>
-    <p>The only data stored is kept locally in your browser's storage (e.g., the ID of a comment you posted via the extension, so you can manage it later). This data never leaves your computer.</p>
 
-    <h2>How to Revoke Access</h2>
-    <p>You are in full control. You can revoke the extension's access to your YouTube account at any time by visiting your <strong><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></strong> and removing "Reaction Bridge" from the list of third-party apps with account access.</p>
+    <h2>4. Data Storage</h2>
+    <p><strong>We do not store any of your personal data on our own servers.</strong> The only piece of data the App stores is the ID of a comment you post through our interface. This data is stored locally and securely on your computer using the standard `chrome.storage.local` API. This allows you to manage (edit or delete) your comment later. This data never leaves your local device.</p>
 
-    <h2>Contact Us</h2>
+    <h2>5. Data Sharing and Disclosure</h2>
+    <p><strong>Reaction Bridge does not share, sell, transfer, or disclose any of your personal or Google user data with any third parties.</strong> All API interactions happen directly between your browser and Google's servers.</p>
+
+    <h2>6. Data Security</h2>
+    <p>We take data security seriously. All communication with the Google YouTube Data API is performed over an encrypted HTTPS connection. Authentication is handled securely through Google's official OAuth2 protocol, meaning we never see or handle your password.</p>
+
+    <h2>7. How to Revoke Access</h2>
+    <p>You are in full control. You can revoke the App's access to your YouTube account at any time by visiting your <strong><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></strong> and removing "Reaction Bridge" from the list of third-party apps with account access.</p>
+
+    <h2>8. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at: mjrduff@googlemail.com</p>
 
     <a href="index.html" class="back-link">← Back to Homepage</a>
