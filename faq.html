@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Reaction Bridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <main>
+        <section class="faq-item">
+            <h3>Why can't I select my Brand Account (e.g., my Gaming Channel)?</h3>
+            <p>The "Switch Channel" button in our extension allows you to switch between different <strong>Google Accounts</strong>. However, YouTube also allows one Google Account to manage multiple channels (e.g., a personal channel and a "Brand Account").</p>
+            <p>Due to YouTube API limitations, external applications like Reaction Bridge will always use the <strong>default channel</strong> associated with your Google Account. You can easily change which channel is the default:</p>
+            <ol>
+                <li>Make sure you are logged into the correct Google Account on YouTube.</li>
+                <li>Go to your <strong><a href="https://www.youtube.com/account_advanced" target="_blank" rel="noopener noreferrer">Advanced account settings</a></strong> on YouTube. This link will take you there directly.</li>
+                <li>If you have a Brand Account, you will see an option to manage your channel or set a default. Ensure the channel you want to use with Reaction Bridge is set as the default.</li>
+                <li>After changing the setting, return to the extension's popup and use the "Switch Channel" button to refresh the connection. It should now show your desired channel.</li>
+            </ol>
+        </section>
+
+        <section class="faq-item">
+            <h3>What does the "Switch Channel" button do?</h3>
+            <p>This button is designed to let you switch between different <strong>Google Accounts</strong> that are logged into your browser. For example, if you have a personal `gmail.com` account and a separate work account, this button will open the Google Account chooser so you can select which identity the extension should use.</p>
+            <p>It does not switch between different YouTube channels (Brand Accounts) that are managed by the <em>same</em> Google Account. For that, please see the question above.</p>
+        </section>
+
+        <section class="faq-item">
+            <h3>Is it safe to connect my Google Account?</h3>
+            <p>Yes. Reaction Bridge uses the official and highly secure <strong>Google OAuth2</strong> process. This means you sign in directly with Google, and we never see or store your password. We only receive a temporary token that grants specific, limited permissions (like, post a comment, like a video) which you approve during the sign-in process.</p>
+            <p>You are in full control and can revoke these permissions at any time from your <strong><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></strong>.</p>
+        </section>
+        <a href="index.html" class="back-link">← Back to Homepage</a>
+    </main>
+</div>
+</body>
+</html>
