@@ -11,43 +11,62 @@
     <header class="page-header">
         <h1>Privacy Policy for Reaction Bridge</h1>
     </header>
-    <p><strong>Last Updated:</strong> 2025-09-03</p>
+    <p><strong>Last Updated and Effective Date:</strong> 2024-07-20</p>
+    <p>Your privacy and trust are of the utmost importance to us. This Privacy Policy outlines our firm commitment to transparency and data protection in compliance with applicable regulations, including the General Data Protection Regulation (GDPR).</p>
 
-    <h2>1. Introduction</h2>
-    <p>This Privacy Policy describes how the "Reaction Bridge" browser extension ("the App") handles your data. Our core principle is to respect your privacy and to collect, use, and store the minimum amount of data necessary to provide our service.</p>
+    <h2>1. Data Controller</h2>
+    <p>The data controller responsible for the "Reaction Bridge" browser extension ("the App") is:</p>
+    <p>Martin Piontek<br>
+        [Ihre Straße und Hausnummer, falls zutreffend]<br>
+        [Ihre PLZ und Stadt, falls zutreffend]<br>
+        Germany<br>
+        Email: mjrduff@googlemail.com</p>
 
-    <h2>2. What Data We Access and Why</h2>
-    <p>To function, the App uses the official Google YouTube Data API to perform actions on your behalf. We only access data when you explicitly initiate an action within the App's interface. The data we access includes:</p>
+    <h2>2. Principle of Data Minimization and Purpose Limitation</h2>
+    <p>Our core philosophy is the **Principle of Least Privilege and Data Minimization**. We only request access to data that is strictly necessary for the App's single, clearly defined purpose: to allow users to interact with original YouTube videos from within a reaction video.</p>
+
+    <h2>3. Permissions Requested and Their Strict Purpose</h2>
+    <p>During the authentication process, you will be asked to grant the App a permission scope from Google. Due to the structure of the YouTube Data API, we are required to request the broad <code>https://www.googleapis.com/auth/youtube.force-ssl</code> scope to enable the comment-posting functionality.</p>
+    <p>The consent screen from Google will describe this permission as allowing the App to "See, edit, and permanently delete your YouTube videos, ratings, comments and captions." We want to be unequivocally clear about how we use this permission:</p>
     <ul>
-        <li><strong>YouTube Channel Information:</strong> We access your public YouTube channel name and thumbnail URL to display which account is currently active in the extension's popup.</li>
-        <li><strong>Video and Channel IDs:</strong> We use the IDs of the original videos and channels to perform actions like liking, commenting, or subscribing.</li>
-        <li><strong>Subscription Status:</strong> We check if you are already subscribed to a channel to display the correct state of the "Subscribe" button.</li>
-        <li><strong>Video Rating Status:</strong> We check your "like" or "dislike" status on a video to display the correct state of the rating buttons.</li>
+        <li>✅ **WE DO USE** this permission to:
+            <ul>
+                <li>Read your channel information to display the active account.</li>
+                <li>Read your rating and subscription status for a video.</li>
+                <li>Post, edit, and delete **your own comments** initiated by you through the App.</li>
+                <li>Add videos to your "Watch Later" playlist.</li>
+                <li>Rate videos (Like/Dislike) on your behalf.</li>
+            </ul>
+        </li>
+        <li>❌ **WE DO NOT AND WILL NEVER USE** this permission to:
+            <ul>
+                <li>View, edit, upload, or delete your videos.</li>
+                <li>Manage your captions.</li>
+                <li>Access any personal information beyond your public channel name and ID.</li>
+                <li>Perform any action without your explicit interaction (e.g., a button click).</li>
+            </ul>
+        </li>
     </ul>
+    <p>The App's code contains no functionality to perform the actions marked with ❌. We are obligated to request the broad scope but are committed to using it only for the narrow purposes listed above.</p>
 
-    <h2>3. How We Use Your Data</h2>
-    <p>Your data is used exclusively to perform the core functions of the App, which you control directly:</p>
-    <ul>
-        <li>To display your currently active YouTube channel.</li>
-        <li>To send your "like" or "dislike" action to the original video.</li>
-        <li>To post, edit, or delete your comments on the original video.</li>
-        <li>To subscribe or unsubscribe you from the original creator's channel.</li>
-    </ul>
-
-    <h2>4. Data Storage</h2>
-    <p><strong>We do not store any of your personal data on our own servers.</strong> The only piece of data the App stores is the ID of a comment you post through our interface. This data is stored locally and securely on your computer using the standard `chrome.storage.local` API. This allows you to manage (edit or delete) your comment later. This data never leaves your local device.</p>
+    <h2>4. Data Storage and Processing</h2>
+    <p><strong>No personal data is processed or stored on any external servers.</strong> All API interactions occur directly between your browser and Google's servers. The only data the App stores is the ID of a comment you post, which is saved locally on your device using the secure `chrome.storage.local` API. This data is not transmitted to us or any third party.</p>
 
     <h2>5. Data Sharing and Disclosure</h2>
-    <p><strong>Reaction Bridge does not share, sell, transfer, or disclose any of your personal or Google user data with any third parties.</strong> All API interactions happen directly between your browser and Google's servers.</p>
+    <p>We declare unequivocally: **We do not sell, rent, share, transfer, or disclose any of your Google user data to any third parties for any reason.**</p>
 
-    <h2>6. Data Security</h2>
-    <p>We take data security seriously. All communication with the Google YouTube Data API is performed over an encrypted HTTPS connection. Authentication is handled securely through Google's official OAuth2 protocol, meaning we never see or handle your password.</p>
+    <h2>6. Your Rights under GDPR</h2>
+    <p>As a user, you have comprehensive rights regarding your data:</p>
+    <ul>
+        <li><strong>The Right to Withdraw Consent:</strong> You can revoke the App's access at any time via your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a>. This will immediately prevent the App from accessing your data.</li>
+        <li><strong>The Right of Access, Rectification, and Erasure:</strong> Since we do not store your personal data, these rights are primarily exercised through your own YouTube account.</li>
+    </ul>
 
-    <h2>7. How to Revoke Access</h2>
-    <p>You are in full control. You can revoke the App's access to your YouTube account at any time by visiting your <strong><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></strong> and removing "Reaction Bridge" from the list of third-party apps with account access.</p>
+    <h2>7. Data Security</h2>
+    <p>All communication between the App and the Google YouTube Data API is encrypted using Transport Layer Security (TLS/SSL). Authentication is handled via the industry-standard OAuth 2.0 protocol, ensuring we never have access to your password.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at: mjrduff@googlemail.com</p>
+    <h2>8. Contact and Complaints</h2>
+    <p>If you have any questions about this policy or our privacy practices, please contact the data controller at the email address listed in Section 1. You also have the right to lodge a complaint with a supervisory authority.</p>
 
     <a href="index.html" class="back-link">← Back to Homepage</a>
 </div>
