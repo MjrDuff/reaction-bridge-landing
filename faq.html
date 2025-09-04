@@ -32,6 +32,17 @@
         </section>
 
         <section class="faq-item">
+            <h3>Why is the extension using my personal channel instead of my Brand Account?</h3>
+            <p>This is a common issue related to how the YouTube API works. By default, third-party applications like Reaction Bridge interact with the <strong>default channel</strong> associated with your Google Account. You can easily change this:</p>
+            <ol>
+                <li>Make sure you are logged into the correct Google Account on YouTube.</li>
+                <li>Go to your <strong><a href="https://www.youtube.com/account_advanced" target="_blank" rel="noopener noreferrer">Advanced account settings</a></strong> on YouTube. This link will take you there directly.</li>
+                <li>Under "Default channel," select your desired Brand Account from the dropdown menu and save the changes.</li>
+                <li>After changing the setting, return to the extension's popup and click the <strong>"Switch Channel"</strong> button. This will refresh the connection and your Brand Account should now be active.</li>
+            </ol>
+        </section>
+
+        <section class="faq-item">
             <h3>Is it safe to connect my Google Account?</h3>
             <p>Yes. Reaction Bridge uses the official and highly secure <strong>Google OAuth2</strong> process. This means you sign in directly with Google, and we never see or store your password. We only receive a temporary token that grants specific, limited permissions (like, post a comment, like a video) which you approve during the sign-in process.</p>
             <p>You are in full control and can revoke these permissions at any time from your <strong><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></strong>.</p>
